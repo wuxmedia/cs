@@ -5,4 +5,4 @@ now in colour!
 usage: cs [domain.com]
 -- that's it.
 
-# requires 'curl' and 'dig'
+-- requires 'curl' and 'dig'
