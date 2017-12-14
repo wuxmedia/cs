@@ -14,3 +14,4 @@ echo -n "($MX) "
 dig A +short $(dig MX "$MX" +short | head -n1)
 echo -e '\e[35mHTTP REQUEST:\e[39m'
 curl --max-time 5 -sI "$DOM" | grep -e "HTTP" -e "Location"
+#test
