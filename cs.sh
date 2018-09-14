@@ -5,7 +5,7 @@ if [ "$*" == "" ]; then
     exit 1
 fi
 #get name from command line and strip http(s):// from it and any trailing slashes:
-DOM=$(echo "$1" | sed 's~http[s]*://~~g | sed 's:/*$::' )
+DOM=$(echo "$1" | sed 's~http[s]*://~~g' | sed 's:/*$::' )
 echo -e "\e[35mNAME SERVERS: \e[39m"
 dig NS "$DOM" +short
 echo -e '\e[35mHOST:\e[39m' 
